@@ -27,15 +27,16 @@ export interface Options {
     | boolean;
 }
 
-export interface Product {
+export interface Products {
   items: Product[];
   total: number;
   page: number;
   perPage: number;
-  totalPage: number;
+  totalPages: number;
 }
 
-export interface Products {
+export interface Product {
+  id?: number;
   price: string;
   name: string;
   image: string;

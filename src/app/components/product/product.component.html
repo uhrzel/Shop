@@ -1,5 +1,12 @@
-<p class="title">
-  {{ product.name }}
-</p>
-
-<img [src]="product.image" alt="product image" class="pimage" />
+<div class="product-grid">
+  <div class="product-item">
+    <div class="image-class">
+      <img [src]="product.image" alt="Product Thumbnail" />
+    </div>
+    <h2>{{ product.name }}</h2>
+    <div class="row gap-05">
+      <span class="price-label">Price:</span>
+      <span>{{ product.price }}</span>
+    </div>
+  </div>
+</div>

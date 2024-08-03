@@ -9,10 +9,31 @@ import { PaginationParams, Products } from '../../types';
 export class ProductsService {
   constructor(private apiService: ApiService) {}
 
-  getProducts = (url: string, params: PaginationParams): Observable<Products> => {
+  getProducts = (
+    url: string,
+    params: PaginationParams,
+  ): Observable<Products> => {
     return this.apiService.get(url, {
       params,
       responseType: 'json',
+    });
+  };
+
+  addProduct = (url: string, body: any): Observable<any> => {
+    return this.apiService.post(url, body, {
+      /* responseType: 'json', */
+    });
+  };
+
+  editProduct = (url: string, body: any): Observable<any> => {
+    return this.apiService.put(url, body, {
+      /*  responseType: 'json', */
+    });
+  };
+
+  deleteProduct = (url: string): Observable<any> => {
+    return this.apiService.delete(url, {
+      /*   responseType: 'json', */
     });
   };
 }

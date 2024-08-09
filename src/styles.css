@@ -86,10 +86,10 @@ app-root {
   justify-content: center;
 }
 
-/* .hidden {
+.hidden {
   display: none;
 }
- */
+
 .disabled {
   pointer-events: none;
   opacity: 0.5;

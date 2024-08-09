@@ -9,9 +9,17 @@
     height: 100%;
     object-fit: contain;
   }
-  .search-icon {
+  /*   .search-icon {
     margin-left: 75px;
     font-weight: bold;
     font-size: x-large;
+  } */
+  a {
+    text-decoration: none;
+    font-weight: 300;
+    color: black;
+  }
+  a.active {
+    font-weight: 900;
   }
 }
